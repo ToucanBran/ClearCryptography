@@ -1,2 +1,2 @@
 # ClearCryptography
-Visualized Cryptography Algorithms
+Cryptography Algorithms Visualized
