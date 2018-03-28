@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-cc-dark">
+  <a class="navbar-brand" href="#"><h3><span class="cc-blue">Clear</span> Cryptography</h3></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div id="navbarNav" class="ml-auto">
+    <ul class="navbar-nav">
+      <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }">
+        <a class="nav-link" [routerLink]="['/']">Home</a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']">
+        <a class="nav-link" [routerLink]="['/about']">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
