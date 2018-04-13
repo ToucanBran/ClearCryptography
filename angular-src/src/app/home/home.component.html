@@ -1,3 +1,7 @@
-<p>
-  home works!
-</p>
+<div class="vh-100">
+    <div class="row justify-content-center align-items-center">
+    <app-algorithm-preview *ngFor="let algorithm of algorithms"
+        [algorithm]="algorithm">
+    </app-algorithm-preview>
+    </div>
+</div>

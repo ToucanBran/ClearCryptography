@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { AlgorithmPreviewComponent } from './algorithm-preview/algorithm-preview.component';
+import { AlgorithmPageComponent } from './algorithm-page/algorithm-page.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
@@ -19,7 +20,8 @@ const appRoutes: Routes = [
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    AlgorithmPreviewComponent
+    AlgorithmPreviewComponent,
+    AlgorithmPageComponent
   ],
   imports: [
     BrowserModule,
