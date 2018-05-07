@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Algorithm } from '../../shared/algorithm';
 
 @Component({
   selector: 'app-algorithm-preview',
@@ -6,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./algorithm-preview.component.scss']
 })
 export class AlgorithmPreviewComponent implements OnInit {
-  @Input() algorithm: string;
+  @Input() algorithm: Algorithm;
 
   constructor() { }
 

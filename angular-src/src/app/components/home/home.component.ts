@@ -7,12 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  algorithms:string[] = [];
+  algorithms:Algorithm[] = [];
   constructor() { }
 
   ngOnInit() {
-    for (var i = 0; i < 8; i++)
-      this.algorithms.push('x');
+    
   }
 
 }
