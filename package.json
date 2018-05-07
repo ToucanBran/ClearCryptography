@@ -1,0 +1,26 @@
+{
+  "name": "clearcryptography",
+  "version": "1.0.0",
+  "description": "Cryptography Algorithms Visualized",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "nodemon": "^1.17.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ToucanBran/ClearCryptography.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ToucanBran/ClearCryptography/issues"
+  },
+  "homepage": "https://github.com/ToucanBran/ClearCryptography#readme"
+}
