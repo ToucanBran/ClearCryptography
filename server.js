@@ -3,7 +3,6 @@ const app = require('./app.js')
 /**
  * Get port from environment and store in Express.
  */
-console.log(app)
 const port = process.env.PORT || '3000';
 
 /**

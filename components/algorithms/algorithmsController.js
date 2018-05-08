@@ -1,4 +1,4 @@
-  module.exports = (req, res) => {
+exports.getAlgorithms = function(req, res) {
     let algos = {
         "algorithms": [
             "Caeser Cipher",
@@ -11,4 +11,4 @@
     }
   
     res.status(200).json({ algos });
-  };
+}
