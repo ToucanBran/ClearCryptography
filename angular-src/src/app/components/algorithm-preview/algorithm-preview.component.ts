@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Algorithm } from '../../shared/algorithm';
+import { Algorithm } from '../../common/algorithm';
 
 @Component({
   selector: 'app-algorithm-preview',
