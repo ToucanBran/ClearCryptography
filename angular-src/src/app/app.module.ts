@@ -9,7 +9,8 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { AlgorithmPreviewComponent } from './components/algorithm-preview/algorithm-preview.component';
 import { AlgorithmPageComponent } from './components/algorithm-page/algorithm-page.component';
-import { AlgorithmService } from './services/algorithm.service'
+import { AlgorithmService } from './services/algorithm.service';
+import { FooterComponent } from './components/footer/footer.component'
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
@@ -23,7 +24,8 @@ const appRoutes: Routes = [
     HomeComponent,
     AboutComponent,
     AlgorithmPreviewComponent,
-    AlgorithmPageComponent
+    AlgorithmPageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

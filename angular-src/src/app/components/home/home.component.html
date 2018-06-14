@@ -1,6 +1,6 @@
-<div class="row vh-100 justify-align-items-center">
-    <div class="grid-3">
-        <app-algorithm-preview *ngFor="let algorithm of algorithms | async" [algorithm]='algorithm'>
+<div class="row mt-2 justify-align-items-center">
+    <div class="d-flex flex-wrap justify-content-center">
+        <app-algorithm-preview class="p-2" *ngFor="let algorithm of algorithms | async" [algorithm]='algorithm'>
         </app-algorithm-preview>
     </div>
 </div>

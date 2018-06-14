@@ -12,6 +12,7 @@ export class AlgorithmPreviewComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log(this.algorithm);
   }
 
 }

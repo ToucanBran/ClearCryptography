@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { AlgorithmService } from '../../services/algorithm.service'
+import { AlgorithmService } from '../../services/algorithm.service';
+import { Algorithm } from '../../common/algorithm';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,7 @@ import { AlgorithmService } from '../../services/algorithm.service'
 })
 export class HomeComponent implements OnInit {
 
-  algorithms: Observable<string[]>;
+  algorithms: Observable<Algorithm[]>;
   constructor(private algorithmService: AlgorithmService) { }
 
   ngOnInit() {
