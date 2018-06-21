@@ -1,12 +1,17 @@
-exports.getAlgorithms = function(req, res) {
-    let algorithms = [
-            {"name":"Caeser Cipher", "description": "loraoiifjaoweifjaoeifjaoweifjawoeijf"},
-            {"name":"Triple DES","description": "loraoiifjaoweifjaoeifjaoweifjawoeijf"},
-            {"name":"RSA","description": "loraoiifjaoweifjaoeifjaoweifjawoeijf"},
-            {"name":"Diffie-Hellman","description": "loraoiifjaoweifjaoeifjaoweifjawoeijf"},
-            {"name":"AES","description": "loraoiifjaoweifjaoeifjaoweifjawoeijf"},
-            {"name":"DES","description": "loraoiifjaoweifjaoeifjaoweifjawoeijf"}
-        ];
-  
-    res.status(200).json({ algorithms });
+var Algorithm = require('../../data/models/algorithm')
+
+function handleError(res, reason, message, code) {
+    console.log("ERROR: " + reason);
+    res.status(code || 500).json({"error": message});
+  }
+exports.getAlgorithms = (req, res) => {
+    Algorithm.find()
+    .exec((err, algorithms) => {
+        if(err) {
+            handleError(res, err.message, "Failed to get previews.");
+        }
+        else {
+            res.status(200).json(algorithms);
+        }
+    });
 }

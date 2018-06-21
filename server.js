@@ -1,5 +1,17 @@
 // Get dependencies
 const app = require('./app.js')
+const config = require('./config/database')
+const mongoose = require('mongoose')
+
+mongoose.connect(config.database);
+
+mongoose.connection.on('connected', () => {
+	console.log('connected to db' + config.database);
+});
+
+mongoose.connection.on('error', (error) => {
+	console.log('error db' + error);
+});
 /**
  * Get port from environment and store in Express.
  */
