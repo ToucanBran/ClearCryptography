@@ -3,6 +3,6 @@
   <div class="card-body">
     <h5 class="card-title">{{algorithm.name}}</h5>
     <p class="card-text">{{algorithm.description}}</p>
-    <a href="#" class="btn btn-primary">Learn more</a>
+    <a [routerLink]="['/algorithm', algorithm.name_id]" class="btn btn-primary">Learn more</a>
   </div>
 </div>

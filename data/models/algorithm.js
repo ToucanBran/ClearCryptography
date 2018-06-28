@@ -8,4 +8,3 @@ var algorithmSchema = new Schema({
 });
 
 const Algorithm = module.exports = mongoose.model('algorithm', algorithmSchema);
-console.log(Algorithm.find())

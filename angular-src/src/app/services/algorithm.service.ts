@@ -11,6 +11,10 @@ export class AlgorithmService {
   constructor(private http: HttpClient) { }
 
   fetchAlgorithms(): Observable<Algorithm[]>{
-    return this.http.get<Algorithm[]>(API_URL + '/api/algorithms').map(res => res as Algorithm[] || []);
+    return this.http.get<Algorithm[]>(`${API_URL}/api/algorithms`).map(res => res as Algorithm[] || []);
+  }
+
+  fetchContent(id): Observable<Algorithm> {
+    return this.http.get<Algorithm>(`${API_URL}/api/algorithm/${id}`).map(res => res as Algorithm);
   }
 }
