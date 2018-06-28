@@ -19,14 +19,14 @@ exports.getAlgorithms = (req, res) => {
 }
 
 exports.getAlgorithmContent = (req, res) => {
-    Algorithm.find({"name_id": parseInt(req.params["id"])}, {name:1, pageContent:1})
+    Algorithm.findOne({"name_id": parseInt(req.params["id"])}, {name:1, pageContent:1})
     .exec((err, content) => {
         if(err) {
             handleError(res, err.message, "Failed to get content.");
         }
         else {
             res.status(200).json(content);
-            
+
         }
     });
 }

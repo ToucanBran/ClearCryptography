@@ -9,14 +9,14 @@ import { Observable } from 'rxjs/Observable';
   styleUrls: ['./algorithm-page.component.scss']
 })
 export class AlgorithmPageComponent implements OnInit {
-  pageContent: Algorithm;
+  pageAlgorithm$: Observable<Algorithm>;
   constructor(private algorithmService: AlgorithmService, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
     let id = this.activatedRoute.snapshot.paramMap.get('id');
-    this.algorithmService.fetchContent(id).subscribe(content => 
-        this.pageContent = content);
-
+    this.pageAlgorithm$ = this.algorithmService.fetchContent(id);
+    // this.algorithmService.fetchContent(id).subscribe(content => 
+    //   this.pageContent = content);
   }
 
 }

@@ -1,3 +1,4 @@
-<p>
- {{pageContent.pageContent}}
+<p *ngIf="pageAlgorithm$ | async as pageAlgorithm">
+  {{pageAlgorithm.pageContent}}
 </p>
+
