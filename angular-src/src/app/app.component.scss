@@ -1,1 +1,15 @@
+html, .page-container {
+    height: 100vh
+}
+
+.navwrapper {
+    flex: 1 0 auto;
+}
+
+.container {
+    flex: 2 0 auto;
+}
+app-footer {
+    flex-shrink: 0
+}
 
